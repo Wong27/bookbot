@@ -8,9 +8,10 @@ def main():
 {num_words} words found in the document
     """
     print(output)
-    char_dict = char_dict.sort(reverse=True, key=sort_on)
-    for letter in char_dict:
+    allowed = "abcdefghijklmnopqrstuvwxyz"
+    for letter in allowed:
         print(f"The '{letter}' was found {char_dict[letter]} times")
+
     print("--- End report ---")
 
 def count_words(text):
